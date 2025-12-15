@@ -1,193 +1,221 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>海龟汤之夜</title>
+  <style>
+    body {
+      font-family: "Microsoft YaHei", sans-serif;
+      background: #f5f3e9;
+      color: #333;
+      line-height: 1.8;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1, h2 {
+      color: #4a362d;
+      text-align: center;
+    }
+    .soup {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #5d4037;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    input {
+      padding: 10px;
+      width: 80%;
+      max-width: 300px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    #next-btn {
+      background: #388e3c;
+      display: block;
+      margin: 20px auto;
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+    .secret {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #fff8e1;
+      border-left: 4px solid #ffc107;
+    }
+    .final {
+      font-weight: bold;
+      color: #d32f2f;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;海龟汤之夜&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: "Microsoft YaHei", sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f5f3e9;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.8;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1, h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #4a362d;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.soup {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 10px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #5d4037;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 6px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 16px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>input {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 80%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 300px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 10px 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>#next-btn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #388e3c;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 20px auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 30px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #666;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.secret {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #fff8e1;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid #ffc107;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;🐢 海龟汤之夜&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p style="text-align:center;"&gt;五幕推理剧场 · 从谜题到觉醒&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 汤1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="soup" id="soup1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;【1】本格推理 · 失踪的新娘&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;汤面：&lt;/strong&gt;婚礼当天，新娘在化妆间准备时突然失踪。现场没有打斗痕迹，门窗反锁，监控显示无人进出。她穿的是沉重的婚纱，不可能自己离开。警察到场后只发现地上有一滩水和一根断掉的珍珠项链。新娘从此再未出现。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;你们是调查此案的侦探，请通过提问还原真相。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" placeholder="请输入主持人公布的密码" id="pass1"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="checkPass(1)"&gt;查看汤底&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="secret" id="ans1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;汤底：&lt;/strong&gt;新娘其实是一尊&lt;strong&gt;冰雕艺术品&lt;/strong&gt;。新郎请艺术家制作了“冰雕新娘”作为婚礼亮点。冰雕在空调房中逐渐融化，水迹和断裂的珍珠项链是融化的结果。众人误以为真人失踪，实则是艺术的消逝。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 汤2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="soup" id="soup2" style="display:none;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;【2】恶搞 · 健身房的死神&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;汤面：&lt;/strong&gt;一名男子在健身房举铁时突然倒地死亡。救护车赶到时他已经没呼吸。医生检查后说：“他死于过度锻炼。”但奇怪的是，他手上只拿着一个空杠铃杆，重量不到5公斤。没人知道他为何会因此而死。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;请通过提问揭开荒诞背后的真相。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" placeholder="请输入主持人公布的密码" id="pass2"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="checkPass(2)"&gt;查看汤底&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="secret" id="ans2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;汤底：&lt;/strong&gt;男子在&lt;strong&gt;动物园猩猩区外&lt;/strong&gt;炫耀举重，激怒银背大猩猩。大猩猩夺过杠铃杆将其砸死。那根“空杆”成了致命武器。“过度锻炼”只是表面判断，真正的凶手是被挑衅的灵长类动物。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 汤3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="soup" id="soup3" style="display:none;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;【10】双生航班&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;汤面：&lt;/strong&gt;两架航班同时起飞：UA882 和 UA883，航线相同，乘客名单完全一致。UA882 安全抵达，但 UA883 在雷达上消失。奇怪的是，UA882 的乘客坚称：“我们才是 UA883。” 调查发现机组手表慢了7秒，电子设备时间戳显示“来自未来”，且有人每天收到自己昨晚写的邮件：“别相信另一个我。”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;请揭开平行现实的裂痕。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" placeholder="请输入主持人公布的密码" id="pass3"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="checkPass(3)"&gt;查看汤底&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="secret" id="ans3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;汤底：&lt;/strong&gt;地球进行“宏观量子纠缠”实验失败，导致两架航班进入叠加态。UA883 实际坠毁，其量子信息被 UA882 吸收，包括记忆与身份认同。UA882 成为“幸存坍缩态”，乘客继承了对方的记忆。邮件是 UA883 的乘客在坠毁前发出，通过量子纠缠短暂穿越维度壁垒。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 汤4 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="soup" id="soup4" style="display:none;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;【12】百年家书&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;汤面：&lt;/strong&gt;每一代长子出生当晚，家中阁楼会出现一封信，火漆印着家族徽章。信的内容永远相同：“保护你的妹妹，否则灾难降临。” 百年来每位长子都竭力守护妹妹，但她总在18岁生日当天离奇死亡。直到第一百零三代，哥哥将她锁进地窖。凌晨门自动打开，妹妹微笑着走出，而他倒在血泊中，手中握着信，背面多了一行字：“谢谢，我终于自由了。”&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;请揭开这份跨越百年的宿命。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" placeholder="请输入主持人公布的密码" id="pass4"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="checkPass(4)"&gt;查看汤底&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="secret" id="ans4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;汤底：&lt;/strong&gt;第一位“妹妹”是古代巫女封印的&lt;strong&gt;灾厄之灵&lt;/strong&gt;，借女孩身体轮回复活。每一代哥哥的“保护”实则是用情感喂养她，助其复苏。这一代哥哥发现真相，拒绝给予爱，切断供给。她在强行夺舍失败后濒临消散，写下感谢：终于不必再受轮回之苦。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 汤5 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="soup" id="soup5" style="display:none;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;【13】第七个人（终章）&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;&lt;strong&gt;汤面：&lt;/strong&gt;有七个人被困在一座废弃剧院里。他们彼此不认识，只记得自己是来参加一个“推理游戏”。墙上写着规则：“你们之中有一人不是真人。找出他，否则门不会开。” 六个人互相质问，第七人沉默记笔记。最终六人投票将一人推出门外。门开了。但他们没有离开。因为他们突然意识到——从一开始，就不该有七个人。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;请揭开这场游戏的本质。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;input type="text" placeholder="请输入主持人公布的密码" id="pass5"/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;button onclick="checkPass(5)"&gt;查看汤底&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="secret" id="ans5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;&lt;strong&gt;汤底：&lt;/strong&gt;你们现在玩的这场海龟汤，正是“那座剧院”里的游戏。&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>• 你们是那六个“寻找真相的人”&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>• 我（主持人）就是那个“记笔记的第七人”&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>• 而这道谜题本身，就是在问：&lt;strong&gt;“谁是不该出现在这个房间里的人？”&lt;/strong&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;所有的谜题都有答案，但最深的那个，是当你意识到——&lt;strong&gt;自己也是谜的一部分&lt;/strong&gt;。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;“我们之中有一人不是真人。” ——他说的，也许从来就不是故事里的人。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 下一汤按钮 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;button id="next-btn" onclick="nextSoup()"&gt;下一汤 →&lt;/button&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>🐢 海龟汤之夜 · 一场关于真相的游戏&lt;br/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>主持人专用手册：&lt;a href="guide.html" target="_blank"&gt;点击查看&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let current = 1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const passwords = {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>1: 'xinniang',</p>
-<p class="p1"><span class="Apple-converted-space">      </span>2: 'death',</p>
-<p class="p1"><span class="Apple-converted-space">      </span>3: 'twinflight',</p>
-<p class="p1"><span class="Apple-converted-space">      </span>4: 'centuryfamily',</p>
-<p class="p1"><span class="Apple-converted-space">      </span>5: 'itsme'</p>
-<p class="p1"><span class="Apple-converted-space">    </span>};</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function checkPass(num) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const input = document.getElementById(`pass${num}`).value.trim().toLowerCase();</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (input === passwords[num]) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById(`ans${num}`).style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (num === 1) document.getElementById('next-btn').style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>alert("密码错误，请确认主持人公布的密码。");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function nextSoup() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (current &gt;= 5) return;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`soup${current}`).style.display = 'none';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>current++;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`soup${current}`).style.display = 'block';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (current === 5) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('next-btn').innerText = "剧终 🎬";</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+  <h1>🐢 海龟汤之夜</h1>
+  <p style="text-align:center;">五幕推理剧场 · 从谜题到觉醒</p>
+
+  <!-- 【1】失踪的新娘 -->
+  <div class="soup" id="soup1">
+    <h2>【1】本格推理 · 失踪的新娘</h2>
+    <p><strong>汤面：</strong>婚礼当天，新娘在化妆间准备时失踪了。现场没有打斗痕迹，门窗反锁，监控显示无人进出。她穿的是沉重的婚纱，不可能自己离开。警察到场后只发现地上有一滩水和一根断掉的珍珠项链。新娘从此再未出现。</p>
+    <input type="text" placeholder="请输入主持人公布的密码" id="pass1"/>
+    <button onclick="checkPass(1)">查看汤底</button>
+    <div class="secret" id="ans1">
+      <p class="final">🔍 汤底：新娘其实是冰雕。新郎请了一位冰雕艺术家制作“冰雕新娘”作为婚礼艺术装置。婚礼前，他将冰雕放在空调房内展示。随着室温上升，冰雕融化成水，珍珠项链是装饰物，断裂掉落。众人误以为是真人新娘失踪。</p>
+      <p>💡 关键点：新娘不是真人，而是冰雕作品。</p>
+    </div>
+  </div>
+
+  <!-- 【2】健身房的死神 -->
+  <div class="soup" id="soup2" style="display:none;">
+    <h2>【2】恶搞 · 健身房的死神</h2>
+    <p><strong>汤面：</strong>一名男子在健身房举铁时突然倒地死亡。救护车赶到时他已经没呼吸。医生检查后说：“他死于过度锻炼。”但奇怪的是，他手上只拿着一个空杠铃杆，重量不到5公斤。没人知道他为何会因此而死。</p>
+    <input type="text" placeholder="请输入主持人公布的密码" id="pass2"/>
+    <button onclick="checkPass(2)">查看汤底</button>
+    <div class="secret" id="ans2">
+      <p class="final">🔍 汤底：男子是在动物园的猩猩区健身。他炫耀般地在笼子外举杠铃，想挑衅里面的银背大猩猩。大猩猩愤怒夺过杠铃杆，一棒砸中他头部致死。那根“空杠铃杆”其实被大猩猩当武器使用了。</p>
+      <p>💡 反转点：对手不是人类，是大猩猩；“举铁”只是导火索。</p>
+    </div>
+  </div>
+
+  <!-- 【10】双生航班 -->
+  <div class="soup" id="soup3" style="display:none;">
+    <h2>【10】双生航班</h2>
+    <p><strong>汤面：</strong>两架航班同时起飞：UA882 和 UA883，航线相同，乘客名单完全一致。UA882 安全抵达，但 UA883 在雷达上消失。奇怪的是，UA882 的乘客坚称：“我们才是 UA883。” 调查发现，UA882 的机组人员佩戴的手表慢了7秒，且所有电子设备的时间戳显示“来自未来”。更诡异的是，其中一名乘客每天早上都会收到一封自己昨晚写的邮件，内容是：“别相信另一个我。”</p>
+    <input type="text" placeholder="请输入主持人公布的密码" id="pass3"/>
+    <button onclick="checkPass(3)">查看汤底</button>
+    <div class="secret" id="ans3">
+      <p class="final">🔍 分层汤底：</p>
+      <p><strong>第一层：量子实验事故</strong><br>
+      地球正在进行“宏观量子纠缠”实验，试图同步两架飞机的状态。<br>
+      实验失败导致两架航班进入“叠加态”：UA882 和 UA883 实际是同一航班的两个量子版本。</p>
+      <p><strong>第二层：谁是“真”的？</strong><br>
+      没有真正的“幸存者”。UA882 的乘客其实是 UA883 的“波函数坍缩产物”。<br>
+      当 UA883 坠毁时，其量子信息被 UA882 吸收，包括记忆、身份认同。</p>
+      <p><strong>第三层：时间差从哪来？</strong><br>
+      UA882 的时间流速略快于原宇宙，造成“未来感”。<br>
+      手表慢7秒是因为它原本属于 UA883 的机组，在坍缩时被带入。</p>
+      <p><strong>第四层：邮件是谁发的？</strong><br>
+      是乘客的“另一个自我”在 UA883 坠毁前发出的。<br>
+      由于量子纠缠，信息短暂穿透维度壁垒。<br>
+      收件人以为是“未来的自己”，其实是“平行的自己”。</p>
+      <p>💡 终极真相：我们都是别人坍塌后的残影。</p>
+    </div>
+  </div>
+
+  <!-- 【12】百年家书 -->
+  <div class="soup" id="soup4" style="display:none;">
+    <h2>【12】百年家书</h2>
+    <p><strong>汤面：</strong>每一代长子出生当晚，家中阁楼会出现一封信，封口火漆印着家族徽章。信的内容永远相同：“保护你的妹妹，否则灾难降临。” 百年来，每位长子都竭尽全力守护妹妹，但妹妹总在18岁生日当天离奇死亡。直到第一百零三代，哥哥在妹妹生日当天亲手将她锁进地窖，自己守在外面。凌晨，地窖门自动打开，妹妹微笑着走出来，而他倒在血泊中，手中握着那封信，背面多了一行字：“谢谢，我终于自由了。”</p>
+    <input type="text" placeholder="请输入主持人公布的密码" id="pass4"/>
+    <button onclick="checkPass(4)">查看汤底</button>
+    <div class="secret" id="ans4">
+      <p class="final">🔍 分层汤底：</p>
+      <p><strong>第一层：信的来源</strong><br>
+      信由第一位“妹妹”的灵魂书写，通过时间裂隙传给每一代。<br>
+      她并非人类，而是古代巫女封印的“灾厄之灵”，借女孩身体复活。</p>
+      <p><strong>第二层：为何必须保护？</strong><br>
+      保护行为 = 提供生命力。越被关爱，她复活越快。<br>
+      每一代哥哥的爱，都是她的养料。</p>
+      <p><strong>第三层：死亡真相</strong><br>
+      她在18岁完成寄生，原主灵魂死亡，她彻底掌控身体。<br>
+      外界看到的是“死亡”，实则是“交接仪式”。</p>
+      <p><strong>第四层：最后一世</strong><br>
+      这一代哥哥发现了日记，明白“保护=喂养”。<br>
+      他锁住她，切断情感供给，让她无法复活。<br>
+      她强行夺舍失败，濒临消散。<br>
+      临终前，她写下感谢：终于不必再轮回受苦。</p>
+      <p>💡 悲剧反转：最深的爱，原来是最快的毒。</p>
+    </div>
+  </div>
+
+  <!-- 【13】第七个人 -->
+  <div class="soup" id="soup5" style="display:none;">
+    <h2>【13】第七个人（终章）</h2>
+    <p><strong>汤面：</strong>有七个人被困在一座废弃剧院里。他们彼此不认识，只记得自己是来参加一个“推理游戏”。墙上写着规则：“你们之中有一人不是真人。找出他，否则门不会开。” 六个人开始互相质问身份：职业、记忆、入场方式……每个人都说得合情合理。第七个人一直沉默，坐在角落记笔记。最终，六人投票认定其中一人是“假的”，将他推出门外。门开了。但他们没有离开。因为他们突然意识到——从一开始，就不该有七个人。</p>
+    <input type="text" placeholder="请输入主持人公布的密码" id="pass5"/>
+    <button onclick="checkPass(5)">查看汤底</button>
+    <div class="secret" id="ans5">
+      <p class="final">🔍 汤底（分层揭示）：</p>
+      <p><strong>表层真相：</strong><br>
+      剧院里的七人正在玩一个“找出非人类”的游戏。<br>
+      他们以为自己都是参与者，但其实有一人是“观察者”——负责记录、引导、控制流程。<br>
+      当他们排除“异常者”后，发现系统本身就有问题：为什么是七人？规则是谁定的？</p>
+      <p><strong>中层反转：</strong><br>
+      所谓“不是真人”，并非指机器人或幻影，而是指 “不属于游戏世界的存在”。<br>
+      第七人其实是游戏的“管理员”，就像DM、裁判、上帝视角者。<br>
+      他的“非人性”在于：他不受规则惩罚，不提供证词，却决定谁能发言。</p>
+      <p><strong>终极真相（第四面墙破裂）：</strong><br>
+      你们现在玩的这场海龟汤，正是“那座剧院”里的游戏。<br>
+      • 你们是那六个“寻找真相的人”<br>
+      • 我（主持人）就是那个“记笔记的第七人”<br>
+      • 而这道谜题本身，就是在问：“谁是不该出现在这个房间里的人？”</p>
+      <p>你们花了整晚去推理别人的故事，<br>
+      但现在，请回头看看——<br>
+      是谁一直在回答‘是’与‘否’？<br>
+      是谁从未被怀疑过？<br>
+      是谁，从一开始就站在游戏之外？</p>
+      <p>“我们之中有一人不是真人。”<br>
+      ——他说的，也许从来就不是故事里的人。</p>
+    </div>
+  </div>
+
+  <!-- 下一汤按钮 -->
+  <button id="next-btn" onclick="nextSoup()">下一汤 →</button>
+
+  <footer>
+    🐢 海龟汤之夜 · 一场关于真相的游戏
+  </footer>
+
+  <script>
+    let current = 1;
+    const passwords = {
+      1: 'xinniang',
+      2: 'death',
+      3: 'twinflight',
+      4: 'centuryfamily',
+      5: 'itsme'
+    };
+
+    function checkPass(num) {
+      const input = document.getElementById(`pass${num}`).value.trim().toLowerCase();
+      if (input === passwords[num]) {
+        document.getElementById(`ans${num}`).style.display = 'block';
+        if (num === 1) document.getElementById('next-btn').style.display = 'block';
+      } else {
+        alert("密码错误，请确认主持人公布的密码。");
+      }
+    }
+
+    function nextSoup() {
+      if (current >= 5) return;
+      document.getElementById(`soup${current}`).style.display = 'none';
+      current++;
+      document.getElementById(`soup${current}`).style.display = 'block';
+      if (current === 5) {
+        document.getElementById('next-btn').innerText = "剧终 🎬";
+      }
+    }
+  </script>
 </body>
 </html>
